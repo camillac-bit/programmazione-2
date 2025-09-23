@@ -3,7 +3,7 @@ Raccolta di esercitazioni del corso di Programmazione 2, comprendente sia gli es
 
 ## Struttura del repository
 
-- `lezione/` : esercizi svolti durante le lezioni
+- `lezioni/` : esercizi svolti durante le lezioni
 - `personali/` : esercizi creati autonomamente
 
 ## To-Do List
