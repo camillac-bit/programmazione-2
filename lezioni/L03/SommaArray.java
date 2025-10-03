@@ -10,6 +10,7 @@ public class SommaArray {
 		while(letti<valori.length && sc.hasNextInt()) {
 			valori[letti++] = sc.nextInt(); //"scanner dimmi il prossimo intero"
 		}
+		sc.close();
 		System.out.println(somma(valori)); //"flusso di uscita stampa"
 	}
 	
