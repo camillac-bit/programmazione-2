@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 public class SommaArray {
 	public static void main(String[] args){
-		int[] primi = {1,2,3};
-		int[] secondi = {-1,-2,-3};
-		
-		IO.println(somma(primi));
-		IO.println(somma(secondi));
+		int[] valori = new int[10];
+		Scanner sc = new Scanner(System.in); //creaimo scannere che può scannerizzare
+											 //da System.in =
+											 //= flusso di ingresso
+		int letti=0;
+		while(letti<valori.length && sc.hasNextInt()) {
+			valori[letti++] = sc.nextInt(); //"scanner dimmi il prossimo intero"
+		}
+		System.out.println(somma(valori)); //"flusso di uscita stampa"
 	}
 	
 	static int somma(int[] valori){
