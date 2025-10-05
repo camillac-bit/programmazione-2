@@ -9,7 +9,7 @@ public class UltimaRipetizione {
         String ripetuta = "";
         boolean found = false;
 
-        for(int i=args.length-1;i>=0 && !found;i--) {
+        for(int i=args.length-1;i>=1 && !found;i--) {
             for(int j=i-1;j>=0;j--) {
                 if(args[i].equals(args[j])) {
                     ripetuta=args[i];
