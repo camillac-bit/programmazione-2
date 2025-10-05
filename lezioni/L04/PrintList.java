@@ -21,7 +21,8 @@ public class PrintList {
 	}
 	
 	static void printReverse(List<String> l) {
-		for(int i=l.size()-1;i>=0;i--) System.out.println(l.get(i));
+		//for(int i=l.size()-1;i>=0;i--) System.out.println(l.get(i));
+        for (String s : l.reversed()) System.out.println(s);
 	}
 	
 }
