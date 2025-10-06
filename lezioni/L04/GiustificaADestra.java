@@ -18,8 +18,9 @@ public class GiustificaADestra {
         if(l.size()!=0) {
             max=l.get(0).length();
             for(int i=1;i<l.size();i++) {
-                if(l.get(i).length()>max) {
-                    max=l.get(i).length();
+                int parolaLength = l.get(i).length();
+                if(parolaLength>max) {
+                    max=parolaLength;
                 }
             }
         }
