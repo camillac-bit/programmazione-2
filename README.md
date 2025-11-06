@@ -7,5 +7,4 @@ Raccolta di esercitazioni del corso di Programmazione 2, comprendente sia gli es
 - `personali/` : esercizi creati autonomamente
 
 ## To-Do List
-- [ ] Lezione 1 24/09
-- [ ] Lezione 2 26/09
+
