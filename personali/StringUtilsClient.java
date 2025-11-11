@@ -22,5 +22,7 @@ public class StringUtilsClient {
         }
 
         System.out.println(StringUtils.cifra(word1));
+
+        System.out.println(StringUtils.comprimi(word1));
     }
 }
