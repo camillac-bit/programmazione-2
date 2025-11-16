@@ -26,12 +26,15 @@ public class ArraysClient {
 
 
             // test sort
-            System.out.println("Array a prima di Arrays.sort(a): " + a);
+            System.out.print("Array a prima di Arrays.sort(a): ");
+            Arrays.printArray(a);
             Arrays.sort(a);
-            System.out.println("Array a dopo Arrays.sort(a): " + a);
+            System.out.print("Array a dopo Arrays.sort(a): ");
+            Arrays.printArray(a);
 
             // test boundArray
-            System.out.println("Arrays.boundArray(d,22): " + Arrays.boundArray(d,22));
+            System.out.print("Arrays.boundArray(d,22): ");
+            Arrays.printArray(Arrays.boundArray(d,22));
 
 
 
