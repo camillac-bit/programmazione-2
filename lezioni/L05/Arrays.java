@@ -83,4 +83,14 @@ public class Arrays {
         return b;
     }
 
+    public static void printArray(int[] a){
+        // OVERVIEW: Stampa il contenuto dell'array a. Se l'array è null o vuoto non fa niente.
+        
+        if (a==null) return;
+
+        for(int elem : a) {
+            System.out.println(elem);
+        }
+    }
+
 }
