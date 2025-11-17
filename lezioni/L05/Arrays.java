@@ -1,5 +1,8 @@
 package lezioni.L05;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Arrays {
     // OVERVIEW: Classe di utilità per gli array. Questa classe fornisce procedure
     // indipendenti per manipolare array di interi.
@@ -75,19 +78,22 @@ public class Arrays {
         int[] b = new int[a.length];
         int i = 0;
         for (int elem : a) {
-            if(elem>n) b[i] = n;
-            else b[i] = elem;
+            if (elem > n)
+                b[i] = n;
+            else
+                b[i] = elem;
             i++;
         }
         return b;
     }
 
-    public static void printArray(int[] a){
+    public static void printArray(int[] a) {
         // OVERVIEW: Stampa il contenuto dell'array a e un ritorno a capo.
-        //           Se l'array è null o vuoto non fa niente.
+        // Se l'array è null o vuoto non fa niente.
 
-        if (a==null) return;
-        for(int elem : a) {
+        if (a == null)
+            return;
+        for (int elem : a) {
             System.out.print(elem + " ");
         }
         System.out.println();
@@ -96,10 +102,26 @@ public class Arrays {
     public static int[] filterRange(int[] a, int min, int max) {
         // REQUIRES: min<=max
         // EFFECTS: Se a è null rstituisce null.
-        //          Altrimenti restituisce un nuovo array b contenente soltanto gli elementi di a 
-        //          compresi tra min e max (estremi inclusi). Gli elementi in b mantengono
-        //          l'ordine originale.
+        // Altrimenti restituisce un nuovo array b contenente soltanto gli elementi di a
+        // compresi tra min e max (estremi inclusi). Gli elementi in b mantengono
+        // l'ordine originale.
 
-        return a;
+        if (a == null) return null;
+
+        List<Integer> l = new ArrayList<>();
+
+        for (int elem : a) {
+            if (elem >= min && elem <= max) {
+                l.add(elem);
+                // l.add(new Integer(elem));
+                // l.add(Integer.valueOf(elem));
+            }
+        }
+
+        int[] b = new int[l.size()];
+
+        for (int i = 0; i < b.length; i++) b[i] = l.get(i);
+
+        return b;
     }
 }
