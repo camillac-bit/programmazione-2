@@ -2,8 +2,7 @@ package lezioni.L05;
 
 public class Arrays {
     // OVERVIEW: Classe di utilità per gli array. Questa classe fornisce procedure
-    // indipendenti
-    // per manipolare array di interi.
+    // indipendenti per manipolare array di interi.
 
     public static int search(int[] a, int x) {
         // EFFECTS: Se x sta in a, restituisce un indice dove x è memorizzato.
@@ -94,4 +93,13 @@ public class Arrays {
         System.out.println();
     }
 
+    public static int[] filterRange(int[] a, int min, int max) {
+        // REQUIRES: min<=max
+        // EFFECTS: Se a è null rstituisce null.
+        //          Altrimenti restituisce un nuovo array b contenente soltanto gli elementi di a 
+        //          compresi tra min e max (estremi inclusi). Gli elementi in b mantengono
+        //          l'ordine originale.
+
+        return a;
+    }
 }
