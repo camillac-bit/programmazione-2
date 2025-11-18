@@ -88,7 +88,7 @@ public class Arrays {
     }
 
     public static void printArray(int[] a) {
-        // OVERVIEW: Stampa il contenuto dell'array a e un ritorno a capo.
+        // EFFECTS: Stampa il contenuto dell'array a e un ritorno a capo.
         // Se l'array è null o vuoto non fa niente.
 
         if (a == null)
