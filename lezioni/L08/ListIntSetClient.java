@@ -27,7 +27,7 @@ public class ListIntSetClient {
 
         s.remove(x);
 
-         System.out.println(x + " fa parte dell'insieme? " + s.isIn(x));
+        System.out.println(x + " fa parte dell'insieme? " + s.isIn(x));
         
 
 
