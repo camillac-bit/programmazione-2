@@ -48,7 +48,7 @@ public class ListIntSet {
      * @param x l'elemento da rimuovere.
      */
     public void remove(int x) {
-        set.remove(x);
+        set.remove(Integer.valueOf(x));
     }
 
     /**
